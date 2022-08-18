@@ -8,7 +8,7 @@ def jumpOnClouds(c):
         return "The first and the last item must be a 0"
     else:
         while i < n and (c[i] == 0 or c[i] == 1):
-            if c[i+2] == 0:
+            if i<n-1 and c[i+2] == 0:
                 i += 2
                 jumps +=1
 # Si al moverse dos lugares, cae sobre un globo verde, suma un salto
